@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_above="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F4F4F4">
+
+            <include
+                android:id="@+id/camera_view"
+                layout="@layout/layout_camera"/>
+
+            <View
+                android:background="@drawable/background_drawable"
+                android:id="@+id/border_view"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="100dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Close"
+            android:textColor="@android:color/darker_gray" />
+
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Retake" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
