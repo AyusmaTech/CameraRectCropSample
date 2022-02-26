@@ -1,6 +1,6 @@
 # CameraRectCropSample
 
-A sample application using Camerax showing how to use the CameraX CropRect Configuration to crop a rectangular area of the camera preview
+A sample application showing how to use the CameraX CropRect Configuration to capture a cropped rectangular area of the camera preview
 
 https://stackoverflow.com/a/65162873/10619147
 
